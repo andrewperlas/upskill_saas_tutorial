@@ -16,43 +16,38 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
+/* Typography styles */
 h1, h2, h3 {
-    font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
+/* Homepage styles */
 .navbar, .home-callout {
-    //Gradient provided by @_ighosh, https://uigradients.com
-    background: #3D7EAA; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* Gradient provided by @_ighosh, https://uigradients.com */
+  background: #3D7EAA; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #3D7EAA , #FFE47A); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #3D7EAA , #FFE47A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
-    border: none;
+  border: none;
 }
 
 .home-callout {
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: black;
+  margin-top: -20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: black;
 }
 
-.navbar-default .navbar-brand {
-    color: black;
-}
-        
+.navbar-default .navbar-brand, 
 .navbar-default .navbar-nav > li > a {
-    color: black;
-}
-
-.navbar-default .navbar-brand:hover {
-    color: black;
-    opacity: 0.55;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-    color: black;
-    opacity: 0.55;
+  color: black;
+  &:hover {
+      color: black;
+      opacity: 0.55;
+  }
 }

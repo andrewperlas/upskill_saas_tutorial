@@ -24,6 +24,20 @@ h1, h2, h3 {
   font-family: Roboto, sans-serif;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+    &:hover {
+    opacity: 0.55;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid black;
+  &:hover {
+    opacity: 0.55;
+  }
+}
+
 /* Homepage styles */
 .navbar, .home-callout {
   /* Gradient provided by @_ighosh, https://uigradients.com */
